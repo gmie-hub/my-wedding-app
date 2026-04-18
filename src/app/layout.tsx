@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Blessing & Folajimi",
   },
   description:
-    "Celebrate Blessing and Folajimi on Saturday, June 6, 2026 at Duro Event Center, Aguda, Surulere.",
+    "Celebrate Blessing and Folajimi on Saturday, June 6, 2026. Join us for a day filled with love, laughter, and unforgettable moments as we exchange vows and begin our new chapter together.",
 };
 
 export default function RootLayout({
