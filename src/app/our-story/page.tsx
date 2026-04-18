@@ -113,6 +113,8 @@ export default function OurStoryPage() {
             <div className="mt-12 text-center">
               <Link
                 href={RSVP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-w-[12rem] items-center justify-center rounded-full bg-[#8f856f] px-8 py-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#fffaf2] transition-colors duration-200 hover:bg-[#7c725d]"
               >
                 RSVP

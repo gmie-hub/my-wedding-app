@@ -36,17 +36,11 @@ export default function HomeHeroSection() {
 
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="/schedule"
+                  href="/details"
                   className="inline-flex items-center justify-center rounded-full bg-[#3a211b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#fff8f1] transition-transform duration-200 hover:-translate-y-0.5"
                 >
                   View Details
                 </Link>
-                {/* <Link
-                  href="/venue"
-                  className="inline-flex items-center justify-center rounded-full border border-[#d8c0ab] bg-white/75 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#5f473c] transition-colors duration-200 hover:bg-[#efe1d2]"
-                >
-                  Explore Venue
-                </Link> */}
               </div>
             </div>
 

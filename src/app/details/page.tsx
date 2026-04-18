@@ -36,6 +36,8 @@ export default function DetailsPage() {
             <div className="mt-10">
               <Link
                 href={RSVP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-w-[12rem] items-center justify-center rounded-full bg-[#f1e8d6] px-8 py-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#4f4539] transition-colors duration-200 hover:bg-[#e7dcc8]"
               >
                 RSVP

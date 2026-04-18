@@ -4,6 +4,6 @@ export const navigationItems = [
   { href: "/", label: "Home" },
   { href: "/our-story", label: "Our Story" },
   { href: "/details", label: "Details" },
-  { href: "/registry", label: "Gift Us" },
+  { href: "/gift-us", label: "Gift Us" },
   { href: RSVP_URL, label: "RSVP" },
 ] as const;

@@ -5,6 +5,10 @@ import { usePathname } from "next/navigation";
 import { navigationItems } from "wed/layout/site-navigation";
 
 function isActiveLink(pathname: string, href: string) {
+  if (href.startsWith("http")) {
+    return false;
+  }
+
   if (href === "/") {
     return pathname === "/";
   }
@@ -29,11 +33,14 @@ export default function SiteHeader() {
           <nav aria-label="Primary" className="flex flex-wrap items-center justify-center gap-2">
             {navigationItems.map((item) => {
               const active = isActiveLink(pathname, item.href);
+              const isExternal = item.href.startsWith("http");
 
               return (
                 <Link
                   key={item.href}
                   href={item.href}
+                  target={isExternal ? "_blank" : undefined}
+                  rel={isExternal ? "noopener noreferrer" : undefined}
                   className={`rounded-full px-4 py-2 text-sm font-medium tracking-[0.18em] uppercase transition-colors duration-200 ${
                     active
                       ? "bg-[#3d241d] text-[#fff7ef]"

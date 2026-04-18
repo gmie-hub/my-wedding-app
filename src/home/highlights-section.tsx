@@ -23,7 +23,7 @@ const highlightCards = [
   },
   {
     title: "Gift Us",
-    href: "/registry",
+    href: "/gift-us",
     src: "https://images.unsplash.com/photo-1739952255298-ae1b2d1ce007?auto=format&fit=crop&fm=jpg&q=80&w=1200",
     alt: "A notepad and dried flowers arranged on a soft blue background.",
   },
@@ -35,9 +35,15 @@ export default function HomeHighlightsSection() {
       <div className="mx-auto max-w-7xl rounded-[2.25rem] border border-[#efe4d8] bg-white px-4 py-4 shadow-[0_24px_70px_rgba(48,26,18,0.06)] sm:px-5 sm:py-5 lg:px-6 lg:py-6">
         <div className="grid gap-4 md:grid-cols-2 lg:gap-5">
           {highlightCards.map((card) => (
+            (() => {
+              const isExternal = card.href.startsWith("http");
+
+              return (
             <Link
               key={card.title}
               href={card.href}
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
               className="group relative block overflow-hidden rounded-[0.9rem]"
             >
               <article className="relative aspect-[0.9] min-h-[20rem]">
@@ -60,6 +66,8 @@ export default function HomeHighlightsSection() {
                 </div>
               </article>
             </Link>
+              );
+            })()
           ))}
         </div>
       </div>

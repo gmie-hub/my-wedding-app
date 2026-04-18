@@ -29,7 +29,7 @@ export default function HomeFinaleSection() {
                 wishlist for anyone who would like to gift us with love.
               </p>
               <Link
-                href="/registry"
+                href="/gift-us"
                 className="mx-auto mt-10 inline-flex min-h-14 min-w-[18rem] items-center justify-center rounded-full bg-[#a79a85] px-8 py-4 text-xs font-semibold uppercase tracking-[0.28em] text-[#fffaf2] transition-colors duration-200 hover:bg-[#988a73]"
               >
                 Gift Us
