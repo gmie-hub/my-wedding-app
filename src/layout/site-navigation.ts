@@ -1,7 +1,9 @@
+import { RSVP_URL } from "wed/data/site-links";
+
 export const navigationItems = [
   { href: "/", label: "Home" },
   { href: "/our-story", label: "Our Story" },
-  { href: "/schedule", label: "Schedule" },
-  { href: "/venue", label: "Venue" },
-  { href: "/rsvp", label: "RSVP" },
+  { href: "/details", label: "Details" },
+  { href: "/registry", label: "Gift Us" },
+  { href: RSVP_URL, label: "RSVP" },
 ] as const;

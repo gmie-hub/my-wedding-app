@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const heroImage =
-  "https://images.unsplash.com/photo-1743172244188-8e09529c2ef4?auto=format&fit=crop&w=1400&q=80";
+import heroImage from "../assets/b_f_2.jpeg";
 
 export default function HomeHeroSection() {
   return (
@@ -31,9 +30,7 @@ export default function HomeHeroSection() {
                   Saturday, June 6, 2026
                 </p>
                 <p className="text-xl font-semibold text-[#2b1b18] sm:text-2xl">
-                  Duro Event Center,
-                  <br />
-                  Aguda, Surulere
+                  #FolafoundhisBlessing2026
                 </p>
               </div>
 
@@ -42,14 +39,14 @@ export default function HomeHeroSection() {
                   href="/schedule"
                   className="inline-flex items-center justify-center rounded-full bg-[#3a211b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#fff8f1] transition-transform duration-200 hover:-translate-y-0.5"
                 >
-                  View Schedule
+                  View Details
                 </Link>
-                <Link
+                {/* <Link
                   href="/venue"
                   className="inline-flex items-center justify-center rounded-full border border-[#d8c0ab] bg-white/75 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#5f473c] transition-colors duration-200 hover:bg-[#efe1d2]"
                 >
                   Explore Venue
-                </Link>
+                </Link> */}
               </div>
             </div>
 
@@ -71,8 +68,9 @@ export default function HomeHeroSection() {
                   Saturday, June 6, 2026
                 </p>
                 <p className="mt-2 max-w-sm text-sm leading-6 text-white/88 sm:text-base">
-                  A beautiful celebration awaits at Duro Event Center in Aguda,
-                  Surulere.
+                  A beautiful celebration awaits as we exchange vows and begin
+                  our new chapter together. We can&apos;t wait to share this
+                  special day with you!
                 </p>
               </div>
             </div>
